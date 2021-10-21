@@ -1,6 +1,6 @@
 # RollforPA
 
-  /zalozenia/
+  zalozenia
 - Aplikacja wyświetla historię rzutów (+możliwość wyczyszczenia historii)
 - Aplikacja ma możliwość losowania cyfr
 - Aplikacja sumuje otrzymane wartości
