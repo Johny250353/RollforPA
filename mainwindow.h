@@ -15,7 +15,37 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_D2_clicked();
+
+    void on_pushButton_D4_clicked();
+
+    void on_pushButton_D6_clicked();
+
+    void on_pushButton_D8_clicked();
+
+    void on_pushButton_D10_clicked();
+
+    void on_pushButton_D20_clicked();
+
+    void on_pushButton_D100_clicked();
+
+    void on_pushButton_rzut_clicked();
+
+    void on_spinBox_iloscrzutuw_valueChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
+
+
+    enum Operation
+    {
+        losowanie,
+        dodawanie,
+        odejmowanie,
+
+    };
+    int Opt;
+    double historia;
 };
 #endif // MAINWINDOW_H
