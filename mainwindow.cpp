@@ -23,50 +23,57 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_D2_clicked()  // szybki rzut d2
 {
-  int d1 = (std::rand()%2+d1 +1);
-  ui->textEdit_historia->setText("Rzut D2:"+  QString::number(d1));
+  int d1 = 0;
+  d1 = (std::rand()%2+d1+1);
+  ui->textEdit_historia->append("Rzut D2:"+  QString::number(d1));
 
 }
 
 void MainWindow::on_pushButton_D4_clicked()// szybki rzut
 {
-    int d1 = (std::rand()%4+d1 +3);
-    ui->textEdit_historia->setText("Rzut D4:"+  QString::number(d1));
+    int d1 = 0;
+    d1 = (std::rand()%4+d1+1);
+    ui->textEdit_historia->append("Rzut D4:"+  QString::number(d1));
 }
 
 
 void MainWindow::on_pushButton_D6_clicked()// szybki rzut
 {
-    int d1 = (std::rand()%6+d1 +5);
-    ui->textEdit_historia->setText("Rzut D6:"+  QString::number(d1));
+    int d1 = 0;
+    d1 = (std::rand()%6+d1+1);
+    ui->textEdit_historia->append("Rzut D6:"+  QString::number(d1));
 }
 
 
 void MainWindow::on_pushButton_D8_clicked()
 {
-    int d1 = (std::rand()%8+d1 +7);
-    ui->textEdit_historia->setText("Rzut D8:"+  QString::number(d1));
+    int d1 = 0;
+    d1 = (std::rand()%8+d1+1);
+    ui->textEdit_historia->append("Rzut D8:"+  QString::number(d1));
 }
 
 
 void MainWindow::on_pushButton_D10_clicked()
 {
-    int d1 = (std::rand()%10+d1 +9);
-    ui->textEdit_historia->setText("Rzut D10:"+  QString::number(d1));
+    int d1 = 0;
+    d1 = (std::rand()%10+d1+1);
+    ui->textEdit_historia->append("Rzut D10:"+  QString::number(d1));
 }
 
 
 void MainWindow::on_pushButton_D20_clicked()
 {
-    int d1 = (std::rand()%20+d1 +19);
-    ui->textEdit_historia->setText("Rzut D20:"+  QString::number(d1));
+    int d1 = 0;
+    d1 = (std::rand()%20+d1+1);
+    ui->textEdit_historia->append("Rzut D20:"+  QString::number(d1));
 }
 
 
 void MainWindow::on_pushButton_D100_clicked()
 {
-    int d1 = (std::rand()%100+d1 +99);
-    ui->textEdit_historia->setText("Rzut D100:"+  QString::number(d1));
+    int d1 = 0;
+    d1 = (std::rand()%100+d1+1);
+    ui->textEdit_historia->append("Rzut D100:"+  QString::number(d1));
 }
 
 
@@ -104,11 +111,12 @@ int q = 0; //wartosc modyfikatora
        QString spin2 = ui->spinBox_iloscscianek->text();// robi to samo co partia wyzej ale z innym spinboxiem
        int b = spin2.toUInt();
 
+       int d1 = 0;
        while (a > 0)
        {
-       int d1 = 0;
-       d1 = (std::rand()%b+d1 +b);
-       ui->textEdit_historia->setText("Rzut:"+  QString::number(d1+q));
+
+       d1 = (std::rand()%b+d1 +1);
+       ui->textEdit_historia->append("Rzut:"+  QString::number(d1+q));
        a--;
        }
     //ui->textEdit_historia->setText(QString::number(a));
