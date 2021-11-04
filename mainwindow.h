@@ -34,6 +34,8 @@ private slots:
 
     void on_spinBox_iloscrzutuw_valueChanged(const QString &arg1);
 
+    void on_spinBox_iloscscianek_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
 

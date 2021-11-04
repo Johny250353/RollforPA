@@ -109,6 +109,9 @@ p, li { white-space: pre-wrap; }
       <height>30</height>
      </size>
     </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="spinBox_iloscscianek">
     <property name="geometry">
@@ -124,6 +127,9 @@ p, li { white-space: pre-wrap; }
       <width>50</width>
       <height>30</height>
      </size>
+    </property>
+    <property name="maximum">
+     <number>100</number>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -342,7 +348,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>10</y>
+      <y>20</y>
       <width>101</width>
       <height>21</height>
      </rect>
@@ -351,70 +357,52 @@ p, li { white-space: pre-wrap; }
      <string>Modyfikatory</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="p20">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>130</x>
       <y>50</y>
-      <width>41</width>
-      <height>17</height>
+      <width>94</width>
+      <height>65</height>
      </rect>
     </property>
-    <property name="text">
-     <string>+20</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="p10">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>50</y>
-      <width>51</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>+10</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="m20">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>80</y>
-      <width>41</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>-20</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="m10">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>80</y>
-      <width>41</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>-10</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="p0">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>110</y>
-      <width>82</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>+0</string>
-    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="p20">
+       <property name="text">
+        <string>+20</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QRadioButton" name="p10">
+       <property name="text">
+        <string>+10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="m20">
+       <property name="text">
+        <string>-20</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QRadioButton" name="m10">
+       <property name="text">
+        <string>-10</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QRadioButton" name="p0">
+       <property name="text">
+        <string>+0</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
