@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>392</width>
-    <height>329</height>
+    <width>438</width>
+    <height>327</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -23,15 +23,15 @@
    <widget class="QPushButton" name="pushButton_wyczysc">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>220</y>
-      <width>111</width>
-      <height>81</height>
+      <x>280</x>
+      <y>270</y>
+      <width>130</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="maximumSize">
      <size>
-      <width>121</width>
+      <width>130</width>
       <height>81</height>
      </size>
     </property>
@@ -47,14 +47,14 @@
      <rect>
       <x>270</x>
       <y>40</y>
-      <width>111</width>
-      <height>171</height>
+      <width>153</width>
+      <height>220</height>
      </rect>
     </property>
     <property name="maximumSize">
      <size>
       <width>153</width>
-      <height>200</height>
+      <height>220</height>
      </size>
     </property>
     <property name="html">
