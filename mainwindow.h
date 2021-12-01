@@ -14,7 +14,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
 private slots:
     void on_pushButton_D2_clicked();
 
@@ -36,18 +35,12 @@ private slots:
 
     void on_spinBox_iloscscianek_valueChanged(int arg1);
 
+   // void on_spinBox_iloscscianek_textChanged(const QString &arg1);
+
+    void on_pushButton_wyczysc_clicked();
+
 private:
     Ui::MainWindow *ui;
 
-
-    enum Operation
-    {
-        losowanie,
-        dodawanie,
-        odejmowanie,
-
-    };
-    int Opt;
-    double historia;
 };
 #endif // MAINWINDOW_H
